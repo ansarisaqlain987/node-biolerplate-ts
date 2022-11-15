@@ -1,10 +1,10 @@
-import express, { Express } from 'express';
+import express from 'express';
+import { ExpressInstance } from '../types';
+import createRouters from '../utils/create-routers';
+import { GlobalErrorHandler } from './common/error-handler';
 
+const app: ExpressInstance = createRouters(express());
 
-const app: Express = express();
-
-app.get('/', (req, res) => {
-    res.send("HELLO");
-});
+app.use(GlobalErrorHandler);
 
 export default app;

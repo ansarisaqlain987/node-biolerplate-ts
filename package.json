@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "start": "concurrently \"npx tsc\" \"node ./dist/utils/createHttpServer.js\"",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon ./dist/utils/createHttpServer.js\""
+    "start": "concurrently \"npx tsc\" \"node ./dist/utils/create-http-server.js\"",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon ./dist/utils/create-http-server.js\""
   }
 }
