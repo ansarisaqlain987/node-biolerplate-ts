@@ -24,6 +24,10 @@ export type AppResponse = {
     message: String;
     response?: Any;
 }
+export type MiddlewareResponse = {
+    isReturn: Boolean;
+    response?: AppResponse;
+}
 
 /** Express Related Types */
 export type ExpressInstance = Express;

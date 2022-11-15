@@ -1,4 +1,5 @@
 import { addUser } from "../controllers/user.controller";
+import { authenticateUser } from "../middlewares/auth.middleware";
 
 const apiConfig = {
     'v1': {
@@ -7,7 +8,7 @@ const apiConfig = {
                 endpoint: 'get',
                 methodType: 'GET',
                 callable: addUser,
-                middlewares: []
+                middlewares: [authenticateUser]
             }
         ],
         'admin': []
