@@ -3,7 +3,6 @@ import apiConfig from "../src/config/api.config"
 import { Any, ApiDetails, ExpressInstance } from "../types";
 import MiddlewareHandler from "./middleware-handler";
 import ResponseTransformer from "./response-transformer";
-import './load-variables';
 
 const createRouters = (app: ExpressInstance): ExpressInstance => {
     let data = apiConfig;
